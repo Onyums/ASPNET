@@ -1,0 +1,27 @@
+﻿@model Product
+
+<h3>@Model.name Information</h3>
+
+<table class="table">
+    <tr>
+        <th>Product ID</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category ID</th>
+        <th>On Sale</th>
+        <th>StockLevel</th>
+    </tr>
+    <tr>
+        <td>@Model.productID</td>
+        <td>@Model.name</td>
+        <td>@Model.price</td>
+        <td>@Model.CategoryID</td>
+        <td>@Model.onSale</td>
+        <td>@Model.stockLevel</td>
+    </tr>
+
+</table>
+
+<div style="display: block">
+    <a href="/Product/UpdateProduct/@Model.productID">Update this Product</a>
+</div>
